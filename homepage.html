@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="icon" type="image/x-icon" href="shadow-man-png-white.png">
+
+    <style>
+        .homepage
+        {
+            background-color: #f9d702;
+            height: auto;
+            float: left;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .first
+        {
+            /* background-color: #000000; */
+            height: 100px;
+            width: 15%;
+            position: absolute;
+            top: 75%;
+            left: 12%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .second
+        {
+            /* background-color: #000000; */
+            height: 100px;
+            width: 15%;
+            position: absolute;
+            top: 75%;
+            left: 34%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .third
+        {
+            /* background-color: #000000; */
+            height: 100px;
+            width: 17%;
+            position: absolute;
+            top: 75%;
+            right: 30%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .fourth
+        {
+            /* background-color: #000000; */
+            height: 100px;
+            width: 15%;
+            position: absolute;
+            top: 75%;
+            /* float: right; */
+            right: 8%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .Top
+        {
+            height: 50px;
+            text-align: center;
+        }
+        
+        .Abhyuday
+        {
+            height: 1000px;
+            position: relative;
+            top: 130vh;
+        }
+        
+        .Arnav
+        {
+            height: 1000px;
+            position: relative;
+            top: 160vh;
+        }
+
+        .Chinmay
+        {
+            height: 1000px;
+            position: relative;
+            top: 190vh;
+        }
+        
+        .Soham
+        {
+            height: 1000px;
+            position: relative;
+            top: 220vh;
+        }
+
+        .ImagE
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 15px;
+        }
+
+        .matter,.Image, .info, .Name
+        {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 5vh;
+            left: 0;
+        }
+
+        .Image
+        {
+            z-index: 10;
+            margin-top: 0px;
+        }
+
+        .matter
+        {
+            height: 850px;
+            background-color: rgb(41, 45, 78);
+            width: 60%;
+            margin-top: 80px;
+            margin-left: 36%;
+            border-radius: 25px;
+        }
+
+        .info
+        {
+            display: block;
+            margin-top: 47px;
+            width: 29%;
+            margin-left: 59%;
+            height: 30px;
+            z-index: 99;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .Name
+        {
+            height: 80px;
+            background-color: rgb(41, 45, 78);
+            width: 30%;
+            margin-left: 62%;
+            margin-top: 80px;
+            z-index: 2;
+            text-align: center;
+            font-size: x-large;
+            z-index: 99;
+        }
+
+        .Name:hover
+        {
+            color: #f9d702;
+            transition: background-color 0.7s;
+        }
+
+        .About
+        {
+            height: 60px;
+            width: 20%;
+            text-align: center;
+        }
+
+        .about, .Achievements
+        {
+            margin-left: 10%;
+            z-index: 99;
+        }
+
+        .about
+        {
+            position: absolute;
+            height: 60px;
+            width: 13%;
+            margin-top: 16%;
+            text-align: center;
+            border-style: solid;
+            border-radius: 55px;
+            border-width: 5px;
+            border-color: #030708;
+        }
+
+        
+        .Achievements
+        {
+            position: absolute;
+            height: 60px;
+            width: 18%;
+            margin-top: 38%;
+            left: -2.3%;
+            text-align: center;
+            border-style: solid;
+            border-radius: 55px;
+            border-width: 5px;
+            border-color: #030708;
+        }
+
+        .about:hover
+        {
+            background-color: #f9d702;
+            transition: background-color 0.7s;
+        }
+        
+        .Achievements:hover
+        {
+            background-color: #f9d702;
+            transition: background-color 0.7s;
+        }
+
+        .abt 
+        {
+            position: absolute;
+            top: 110px;
+            height: 300px;
+            width: 90%;
+            padding: 35px;
+            z-index: 3;
+            color: aliceblue;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            z-index: 99;
+        }
+        
+        .ach 
+        {
+            position: absolute;
+            top: 480px;
+            height: 300px;
+            width: 90%;
+            padding: 35px;
+            z-index: 3;
+            color: aliceblue;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            z-index: 99;
+        }
+
+        /* Adjusting towards left or inverting */
+
+        .matter_left,.Image_left, .info_left, .Name_left
+        {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 5vh;
+            right: 37%;
+        }
+
+        .Image_left
+        {
+            z-index: 10;
+            margin-top: 0px;
+            right: 36%;
+        }
+
+        .matter_left
+        {
+            height: 850px;
+            background-color: rgb(41, 45, 78);
+            width: 60%;
+            margin-top: 80px;
+            margin-left: 38%;
+            border-radius: 25px;
+        }
+
+        .info_left
+        {
+            position: absolute;
+            display: block;
+            margin-top: 47px;
+            width: 29%;
+            left: 23%;
+            height: 30px;
+            z-index: 99;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .Name_left
+        {
+            position: absolute;
+            height: 80px;
+            /* background-color: rgb(41, 45, 78); */
+            width: 35%;
+            left: 23%;
+            margin-top: 80px;
+            z-index: 2;
+            text-align: center;
+            font-size: x-large;
+            z-index: 99;
+        }
+
+        .About_right
+        {
+            height: 60px;
+            width: 20%;
+            text-align: center;
+        }
+
+        .about_right, .Achievements_right
+        {
+            margin-left: 70%;
+        }
+
+        .about_right
+        {
+            position: absolute;
+            height: 60px;
+            width: 13%;
+            margin-top: 16%;
+            left: 4%;
+            text-align: center;
+            border-style: solid;
+            border-radius: 55px;
+            border-width: 5px;
+            border-color: #030708;
+        }
+
+        .about_right:hover
+        {
+            background-color: #f9d702; 
+            transition: background-color 0.7s;
+        }
+        
+        .Achievements_right:hover
+        {
+            background-color: #f9d702;
+            transition: background-color 0.7s;
+        }
+
+        .Achievements_right
+        {
+            position: absolute;
+            height: 60px;
+            width: 18%;
+            margin-top: 38%;
+            left: 2%;
+            text-align: center;
+            border-style: solid;
+            border-radius: 55px;
+            border-width: 5px;
+            border-color: #030708;
+        }
+
+        .Scroll_to_top
+        {
+            z-index: 10;
+            /* background-color: rgb(255, 255, 255); */
+            width: 60px;
+            height: 40px;
+            position: fixed;
+            bottom: 15px;
+            text-align: center;
+            border-radius: 50%;
+            margin-left: 96%;
+        }
+
+        .MAIN
+        {
+            width: 400px;
+            /* background-color: #030708; */
+            height: 10%;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            position: relative;
+            top: 4%;
+            margin: auto;
+            font-size: x-large;
+            border-style: solid;
+            /* border-radius: 55px; */
+            border-width: 5px;
+            border-color: #030708;
+        }
+
+        html
+        {
+            scroll-behavior: smooth;
+        }
+
+    </style>
+
+</head>
+<body style="margin: 0px; background-color: rgb(255, 255, 255);">
+
+    <div class="Container" id="Container">
+        <div class="homepage">
+            <img src="pencils-png.png" height="300px" style="margin-left: -4%;">
+            <!-- <img src="laptop-png.png" height="300px" style="float: right;"> -->
+            <img src="shadow-man-png.png" height="300px" style="margin-left: 4%;margin-top: 34px;">
+            <!-- <img src="portfolio-text-navy-blue.jpg" height="200px" style="margin-left: 100px; margin-top: 40px;"> -->
+
+            <div class="MAIN">
+                <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; position: absolute; top: 5%; margin: auto; left: 3%;">P O R T F O L I O</h1>
+            </div>
+
+        </div>
+
+         <div class="first">
+            <img src="profile-picture-logo-png.png" height="25px" style="float: left; margin-right: 20px;">
+            <h1 style="display: inline;font-size: large; margin-top: 5px;">
+                <a href="#Abhyuday" style="text-decoration: none; color:#030708;">ABHYUDAY SHUKLA</a>
+            </h1>
+        </div>
+        
+        <div class="second">
+            <img src="profile-picture-logo-png.png" height="25px" style="float: left; margin-right: 20px;">
+            <h1 style="display: inline;font-size: large; margin-top: 5px;">
+                <a href="#Arnav" style="text-decoration: none; color:#030708;">ARNAV GAUR</a>
+            </h1>
+        </div>
+        
+        <div class="third">
+            <img src="profile-picture-logo-png.png" height="25px" style="float: left; margin-right: 20px;">
+            <h1 style="display: inline;font-size: large; margin-top: 5px;">
+                <a href="#Chinmay" style="text-decoration: none; color:#030708;">CHINMAY MOONDRA</a>
+            </h1>
+        </div>
+        
+        <div class="fourth">
+            <img src="profile-picture-logo-png.png" height="25px" style="float: left; margin-right: 20px;">
+            <h1 style="display: inline;font-size: large; margin-top: 5px;">
+                <a href="#Soham" style="text-decoration: none; color:#030708;">SOHAM KHATOD</a>
+            </h1>
+        </div>
+    </div>
+
+    <div class="Abhyuday" id="Abhyuday">
+        <div class="About_right">
+        </div>
+        
+        <div class="about_right">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 5px;">About Me</h1>
+        </div>
+        
+        <div class="Achievements_right">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 5px;">Achievements</h1>
+        </div>
+        <div class="Image_left">
+            <img class="ImagE" src="pexels-dids-2911521.jpg" height="200px" alt="MY photo.">
+        </div>
+        <div class="info_left">
+            <img src="telephone-icon.png" height="20px" style="display: inline; margin-top: 7px; margin-left: 10px; float: left;">
+            <div class="tele" style="display: inline; margin-top: 5px;margin-left: 10px; padding: 0px; float: left;">
+                9090909090
+            </div>
+            
+            <img src="email-id-logo.png" height="20px" style="display: inline; margin-top: 7px; margin-left: 10px; float: left;">
+            <div class="tele" style="display: inline; margin-top: 5px;margin-left: 10px; float: left;">
+                abc@gmail.com
+            </div>
+        </div>
+        <div class="Name_left">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(227, 230, 233);" >ABHYUDAY SHUKLA</h1>
+        </div>
+        <div class="matter_left">
+            <div class="abt">
+                <p>There was a time in his life when her rudeness would have set him over the edge. He would have raised his voice and demanded to speak to the manager. That was no longer the case. He barely reacted at all, letting the rudeness melt away without saying a word back to her. He had been around long enough to know where rudeness came from and how unhappy the person must be to act in that way. All he could do was feel pity and be happy that he didn't feel the way she did to lash out like that.</p>
+                <p>There wasn't a whole lot more that could be done. It had become a wait-and-see situation with the final results no longer in her control.</p>
+            </div>
+            
+            <div class="ach">
+                djhfjkhjkhf
+                <ul>
+                    <li>
+                        kfjijfi
+                    </li>
+                    <li>
+                        kfjijfi
+                    </li>
+                </ul>
+                klfjdjkffj
+                klajjfj
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="Arnav" id="Arnav">
+        <div class="About">
+        </div>
+        
+        <div class="about">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 5px;">About Me</h1>
+        </div>
+        
+        <div class="Achievements">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 5px;">Achievements</h1>
+        </div>
+        <div class="Image">
+            <img class="ImagE" src="pexels-dids-2911521.jpg" height="200px" alt="MY photo.">
+        </div>
+        <div class="info">
+            <img src="telephone-icon.png" height="20px" style="display: inline; margin-top: 7px; margin-left: 10px; float: left;">
+            <div class="tele" style="display: inline; margin-top: 5px;margin-left: 10px; padding: 0px; float: left;">
+                9090909090
+            </div>
+            
+            <img src="email-id-logo.png" height="20px" style="display: inline; margin-top: 7px; margin-left: 10px; float: left;">
+            <div class="tele" style="display: inline; margin-top: 5px;margin-left: 10px; float: left;">
+                abc@gmail.com
+            </div>
+        </div>
+        <div class="Name">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(227, 230, 233);">ARNAV GAUR</h1>
+        </div>
+        <div class="matter">
+            <div class="abt">
+                <p>There was a time in his life when her rudeness would have set him over the edge. He would have raised his voice and demanded to speak to the manager. That was no longer the case. He barely reacted at all, letting the rudeness melt away without saying a word back to her. He had been around long enough to know where rudeness came from and how unhappy the person must be to act in that way. All he could do was feel pity and be happy that he didn't feel the way she did to lash out like that.</p>
+                <p>There wasn't a whole lot more that could be done. It had become a wait-and-see situation with the final results no longer in her control.</p>
+            </div>
+            
+            <div class="ach">
+                djhfjkhjkhf
+                <ul>
+                    <li>
+                        kfjijfi
+                    </li>
+                    <li>
+                        kfjijfi
+                    </li>
+                </ul>
+                klfjdjkffj
+                klajjfj
+            </div>
+        </div>
+
+    </div>
+
+    <div class="Chinmay" id="Chinmay">
+        <div class="About_right">
+        </div>
+        
+        <div class="about_right">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 5px;">About Me</h1>
+        </div>
+        
+        <div class="Achievements_right">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 5px;">Achievements</h1>
+        </div>
+        <div class="Image_left">
+            <img class="ImagE" src="pexels-dids-2911521.jpg" height="200px" alt="MY photo.">
+        </div>
+        <div class="info_left">
+            <img src="telephone-icon.png" height="20px" style="display: inline; margin-top: 7px; margin-left: 10px; float: left;">
+            <div class="tele" style="display: inline; margin-top: 5px;margin-left: 10px; padding: 0px; float: left;">
+                9090909090
+            </div>
+            
+            <img src="email-id-logo.png" height="20px" style="display: inline; margin-top: 7px; margin-left: 10px; float: left;">
+            <div class="tele" style="display: inline; margin-top: 5px;margin-left: 10px; float: left;">
+                abc@gmail.com
+            </div>
+        </div>
+        <div class="Name_left">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(227, 230, 233);">CHINMAY MOONDRA</h1>
+        </div>
+        <div class="matter_left">
+            <div class="abt">
+                <p>There was a time in his life when her rudeness would have set him over the edge. He would have raised his voice and demanded to speak to the manager. That was no longer the case. He barely reacted at all, letting the rudeness melt away without saying a word back to her. He had been around long enough to know where rudeness came from and how unhappy the person must be to act in that way. All he could do was feel pity and be happy that he didn't feel the way she did to lash out like that.</p>
+                <p>There wasn't a whole lot more that could be done. It had become a wait-and-see situation with the final results no longer in her control.</p>
+            </div>
+            
+            <div class="ach">
+                djhfjkhjkhf
+                <ul>
+                    <li>
+                        kfjijfi
+                    </li>
+                    <li>
+                        kfjijfi
+                    </li>
+                </ul>
+                klfjdjkffj
+                klajjfj
+            </div>
+        </div>
+
+    </div>
+
+    <div class="Soham" id="Soham">
+        <div class="About">
+        </div>
+        
+        <div class="about">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 5px;">About Me</h1>
+        </div>
+        
+        <div class="Achievements">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 5px;">Achievements</h1>
+        </div>
+        <div class="Image">
+            <img class="ImagE" src="pexels-dids-2911521.jpg" height="200px" alt="MY photo.">
+        </div>
+        <div class="info">
+            <img src="telephone-icon.png" height="20px" style="display: inline; margin-top: 7px; margin-left: 10px; float: left;">
+            <div class="tele" style="display: inline; margin-top: 5px;margin-left: 10px; padding: 0px; float: left;">
+                9090909090
+            </div>
+            
+            <img src="email-id-logo.png" height="20px" style="display: inline; margin-top: 7px; margin-left: 10px; float: left;">
+            <div class="tele" style="display: inline; margin-top: 5px;margin-left: 10px; float: left;">
+                abc@gmail.com
+            </div>
+        </div>
+        <div class="Name">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(227, 230, 233);">SOHAM KHATOD</h1>
+        </div>
+        <div class="matter">
+            <div class="abt">
+                <p>There was a time in his life when her rudeness would have set him over the edge. He would have raised his voice and demanded to speak to the manager. That was no longer the case. He barely reacted at all, letting the rudeness melt away without saying a word back to her. He had been around long enough to know where rudeness came from and how unhappy the person must be to act in that way. All he could do was feel pity and be happy that he didn't feel the way she did to lash out like that.</p>
+                <p>There wasn't a whole lot more that could be done. It had become a wait-and-see situation with the final results no longer in her control.</p>
+            </div>
+            
+            <div class="ach">
+                djhfjkhjkhf
+                <ul>
+                    <li>
+                        kfjijfi
+                    </li>
+                    <li>
+                        kfjijfi
+                    </li>
+                </ul>
+                klfjdjkffj
+                klajjfj
+            </div>
+        </div>
+
+    </div>
+
+    <div class="Scroll_to_top">
+        <a href="#Container" style="text-decoration: none; margin-top: 10px;">
+            <img src="Top-arrow.png" height="35px" style="margin-top: 10px;">
+        </a>
+    </div>
+    
+    
+</body>
+</html>
