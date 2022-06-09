@@ -1,0 +1,249 @@
+.Head
+{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.coder
+{
+    height: 60vh;
+    width: 70vh;
+    margin-right: 30px;
+    background-image: url("CODER.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.PORT
+{
+    margin-top: 20vh;
+    margin-left: 30px;
+}
+
+.PORTd
+{
+    position: absolute;
+    z-index: 999;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    top: 50%;
+    left: 50%;
+    font-size: xx-large;
+    transform: translate(-50%,-50%);
+}
+
+.up
+{
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.middle
+{
+    color: rgb(41, 45, 78);
+    line-height: 40px;
+}
+
+.down
+{
+    line-height: 34px;
+    font-weight: bold;
+}
+
+.Arnav
+{
+    height: 45vw;
+    margin-top: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.matter
+{
+    width: 55%;
+    font-size: .5em;
+    margin-right: 30px;
+    height: 50%;
+}
+
+.Name
+{
+    color: rgb(41, 45, 78);
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.Image
+{
+    height: 29vw;
+    width: 29vw;
+    margin-left: 5%;
+    background-image: url("about-me.png");
+    background-size: cover;
+}
+
+
+.tele:hover , .mail:hover
+{
+    font-weight: bold;
+}
+
+.bye
+{
+    height: 50px;
+    background-color: rgb(239, 239, 239);
+    position: relative;
+    top: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle:hover
+{
+    color: crimson;
+}
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: #ffffff; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgb(41, 45, 78); 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgb(36, 40, 69); 
+}
+
+.language
+{
+    height: 45vw;
+    text-align: center;
+}
+.lang_text
+{
+    position: relative;
+    font-size: .5em;
+    top: 45%;
+}
+
+.bub1
+{
+    background-image: url("C++_Logo.png");
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 12vw;
+    width: 10vw;
+}
+
+.bub2
+{
+    background-image: url("C_Programming_Language.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 88vw;
+    margin-top: 5vw;
+    height: 8vw;
+    width: 5vw;
+}
+
+.bub3
+{
+    background-image: url("python-programming-language.png");
+    background-size: cover;
+    margin-left: 7vw;
+    margin-top: -10vw;
+    height: 8vw;
+    width: 8vw;
+}
+
+.bub4
+{
+    background-image: url("django-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 9vw;
+    margin-left: 4vw;
+    height: 5vw;
+    width: 13vw;
+}
+
+.bubs
+{
+    margin-left: 23vw;
+}
+
+.bub5
+{
+    background-image: url("HTML.png");
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 7vw;
+    width: 7vw;
+}
+
+.bub6
+{
+    background-image: url("CSS3_logo.png");
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 18vw;
+    height: 7vw;
+    width: 7vw;
+}
+
+.Scroll_to_top
+{
+    position: fixed;
+    z-index: 999;
+    bottom: .05vw;
+    right: .3vw;
+}
+
+
+.email
+{
+    height: 35px;
+    width: 45px;
+    margin-left: 25px;
+    background-image: url("email-id-logo.png");
+    background-size: cover;
+}
+
+.github
+{
+    height: 45px;
+    width: 45px;
+    margin-left: 25px;
+    background-image: url("GitHub-Mark.png");
+    background-size: cover;
+}
+
+.twitter
+{
+    height: 45px;
+    width: 45px;
+    margin-left: 25px;
+    background-image: url("twiter-logo.png");
+    background-size: cover;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+
+
