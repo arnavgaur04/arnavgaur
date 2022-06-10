@@ -2,11 +2,13 @@
 {
     display: flex;
     justify-content: space-around;
+    height: 60vh;
+    min-height: 600px;
 }
 
 .coder
 {
-    height: 70vh;
+    height: 100%;
     width: 80vh;
     margin-right: 10px;
     background-image: url("CODER.jpg");
