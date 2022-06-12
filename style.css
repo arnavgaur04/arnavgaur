@@ -9,9 +9,10 @@
 .coder
 {
     height: 100%;
-    width: 80vh;
-    margin-right: 10px;
-    background-image: url("CODER.jpg");
+    width: 55vw;
+    max-width: 600px;
+    margin-right: 0px;
+    background-image: url("CODER-.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
