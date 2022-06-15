@@ -1,3 +1,9 @@
+::selection
+{
+    background-color: rgb(41, 45, 78);
+    color: aliceblue;
+}
+
 .Head
 {
     display: flex;
